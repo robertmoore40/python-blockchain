@@ -8,4 +8,6 @@ class Block:
         self.previous_hash = previous_hash
         self.hash = self.hash_block()
 
-        def hash_block(self)
+        def hash_block(self):
+            sha = hasher.sha256()
+            sha.update(str(self.index)) +  
