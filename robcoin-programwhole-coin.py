@@ -24,3 +24,6 @@ def next_block(last_block):
   this_data = "Hey! I'm block " + str(this_index)
   this_hash = last_block.hash
   return Block(this_index, this_timestamp, this_data, this_hash)
+
+blockchain = [create_genesis_block()]
+previous_block = blockchain[0]
