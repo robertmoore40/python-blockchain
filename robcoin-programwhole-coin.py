@@ -27,3 +27,6 @@ def next_block(last_block):
 
 blockchain = [create_genesis_block()]
 previous_block = blockchain[0]
+
+# This number can be changed
+num_of_blocks_to_add = 20
