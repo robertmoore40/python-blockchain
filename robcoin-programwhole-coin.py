@@ -30,3 +30,7 @@ previous_block = blockchain[0]
 
 # This number can be changed
 num_of_blocks_to_add = 20
+
+for i in range(0, num_of_blocks_to_add):
+      block_to_add = next_block(previous_block)
+      blockchain.append(block_to_add)
